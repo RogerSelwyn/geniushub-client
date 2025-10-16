@@ -1,6 +1,7 @@
-[![CircleCI](https://circleci.com/gh/manzanotti/geniushub-client.svg?style=svg)](https://circleci.com/gh/manzanotti/geniushub-client) [![Join the chat at https://gitter.im/geniushub-client/community](https://badges.gitter.im/geniushub-client/community.svg)](https://gitter.im/geniushub-client/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/geniushub-client)
+**This is a fork of the repository owned by [@manzanotti](https://github.com/manzanotti/geniushub-client/) which appears to have been abandoned. It can be remerged with his version if wanted.**
 
 # geniushub-client
+
 This is a Python library to provide access to a **Genius Hub** by abstracting its [RESTful API](https://my.geniushub.co.uk/docs). It uses **aiohttp** and is therefore async-friendly.
 
 This library can use either the **_offical_ v1 API** with a [hub token](https://my.geniushub.co.uk/tokens), or the **_latest_ v3 API** (using your own [username and password](https://www.geniushub.co.uk/app)). In either case, the library will return v1-compatible results wherever possible (this is not a trivial task).
