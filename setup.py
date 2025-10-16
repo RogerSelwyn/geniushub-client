@@ -7,19 +7,19 @@ import os
 
 from setuptools import find_packages, setup
 
-URL = "https://github.com/manzanotti/geniushub-client"
+URL = "https://github.com/RogerSelwyn/geniushub-client"
 
 with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
 
-VERSION = os.environ["GITHUB_REF_NAME"]
+VERSION = "0.7.1"
 
 setup(
     name="geniushub-client",
     description="An aiohttp-based client for Genius Hub systems",
     keywords=["genius", "geniushub", "heatgenius"],
-    author="Paul Manzotti",
-    author_email="manzo@gorilla-tactics.com",
+    author="Roger Selwyn",
+    author_email="roger.selwyn@nomail.com",
     url=URL,
     install_requires=["aiohttp"],
     long_description=LONG_DESCRIPTION,
@@ -27,12 +27,12 @@ setup(
     packages=find_packages(exclude=["test", "docs"]),
     version=VERSION,
     license="MIT",
-    python_requires=">=3.9",
+    python_requires=">=3.13",
     classifiers=[
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.13",
         "Topic :: Home Automation",
     ],
     project_urls={  # Optional
